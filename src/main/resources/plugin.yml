@@ -1,0 +1,8 @@
+name: CustomFishing
+version: '${project.version}'
+main: me.schmeb.customfishing.CustomFishing
+api-version: 1.19
+commands:
+  customfishing:
+    usage: /<command>
+    description: CustomFishing
