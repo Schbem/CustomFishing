@@ -25,19 +25,19 @@ public class ConfigFile {
         fileConfiguration = YamlConfiguration.loadConfiguration(file);
     }
 
-    public static FileConfiguration get(){
+    public static FileConfiguration get() {
         return fileConfiguration;
     }
 
-    public static void save(){
-        try{
+    public static void save() {
+        try {
             fileConfiguration.save(file);
         }catch(IOException e){
             System.out.println("Cannot Save File");
         }
     }
 
-    public static void reload(){
+    public static void reload() {
         fileConfiguration = YamlConfiguration.loadConfiguration(file);
     }
 }
